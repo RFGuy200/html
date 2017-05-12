@@ -1,5 +1,5 @@
 h1{
-	color: lightblue;
+	color: blue;
 }
 
 ul{
@@ -9,7 +9,6 @@ ul{
 }
 
 li{
-	margin: 0px;
 	float: left;
 }
 
@@ -20,13 +19,13 @@ a{
 	padding: 10px 10px;
 }
 
-li:hover{
+a:hover{
 	background-color: #000;
 }
 
 li .dropdown{
-	display: inline-block;
 	position: relative;
+	background-color: #000;
 }
 .dropdown-content{
 	display:none;
@@ -41,9 +40,32 @@ li .dropdown{
 }
 
 .dropdown-content a:hover{
-	background-color: #808080;
+	background-color: #000;
 }
 
 .dropdown:hover .dropdown-content{
 	display:block;
+}
+
+.custom-tooltip{
+	position: relative;
+	text-decoration: none;
+	border-bottom: dotted;
+	border-color:#808080;
+	border-width: 1px;
+}
+
+.tooltip-content{
+	display: none;
+	position: absolute;
+	z-index: 1;
+	background-color: #000;
+	color: #FFF;
+	text-align: left;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.custom-tooltip:hover + .tooltip-content{
+	display: block;
 }
