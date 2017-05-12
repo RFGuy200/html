@@ -66,6 +66,17 @@ li .dropdown{
 	padding: 10px;
 }
 
+.tooltip-content::after{
+	content:"";
+	position: absolute;
+	bottom: 100%;
+	left: 25%;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent #000 transparent;
+}
+
 .custom-tooltip:hover + .tooltip-content{
 	display: block;
 }
+
