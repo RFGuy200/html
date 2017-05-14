@@ -2,6 +2,7 @@ h1{
 	color: blue;
 }
 
+/*Menu section*/
 ul{
 	list-style-type: none;
 	background-color: #808080;
@@ -23,6 +24,8 @@ a:hover{
 	background-color: #000;
 }
 
+/*Dropdown button section*/
+
 li .dropdown{
 	position: relative;
 	background-color: #000;
@@ -31,6 +34,10 @@ li .dropdown{
 	display:none;
 	position: absolute;
 	z-index: 1;
+	opacity: 0;
+	transition: opacity 3s;
+	-webkit-transition: opacity 10s;
+
 }
 
 .dropdown-content a{
@@ -45,8 +52,10 @@ li .dropdown{
 
 .dropdown:hover .dropdown-content{
 	display:block;
+	opacity: 1;
 }
 
+/*Custom tooltip*/
 .custom-tooltip{
 	position: relative;
 	text-decoration: none;
@@ -64,6 +73,14 @@ li .dropdown{
 	text-align: left;
 	border-radius: 10px;
 	padding: 10px;
+	opacity: 0;
+	-webkit-transition: opacity 3s;
+	-moz-transition: opacity 10s;
+	-o-transition: opacity 10s;
+	transition: opacity 10s;
+
+
+
 }
 
 .tooltip-content::after{
@@ -78,5 +95,30 @@ li .dropdown{
 
 .custom-tooltip:hover + .tooltip-content{
 	display: block;
+	opacity: 1;
 }
 
+/*Searching box*/
+
+.searching-box{
+	box-sizing: border;
+	display: inline-block;
+	width: 25%;
+	-webkit-transition: width 0.5s ease-in-out;
+	border-radius: 4px;
+	background-color: #FFF;
+	background-image: url(../pics/search.png);
+	background-repeat: no-repeat;
+/*	background-position: 10px 10px;
+	*/
+	padding: 5px 40px;
+	font-size: 16;
+}
+
+input[class="searching-box"]:hover{
+	width: 50%;
+}
+.searching-button{
+	padding: 5px 15px;	
+	font-size: 16;	
+}
