@@ -36,7 +36,7 @@ li .dropdown{
 	z-index: 1;
 	opacity: 0;
 	transition: opacity 3s;
-	-webkit-transition: opacity 10s;
+	-webkit-transition: opacity 1s;
 
 }
 
@@ -78,9 +78,6 @@ li .dropdown{
 	-moz-transition: opacity 10s;
 	-o-transition: opacity 10s;
 	transition: opacity 10s;
-
-
-
 }
 
 .tooltip-content::after{
@@ -109,8 +106,6 @@ li .dropdown{
 	background-color: #FFF;
 	background-image: url(../pics/search.png);
 	background-repeat: no-repeat;
-/*	background-position: 10px 10px;
-	*/
 	padding: 5px 40px;
 	font-size: 16;
 }
@@ -121,4 +116,15 @@ input[class="searching-box"]:hover{
 .searching-button{
 	padding: 5px 15px;	
 	font-size: 16;	
+}
+
+/*Counter practice*/
+
+body{
+	counter-reset: section;
+}
+
+h2::before{
+counter-increment: section;
+content: "Exercise #" counter(section) ": ";
 }
