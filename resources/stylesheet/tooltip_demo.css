@@ -78,10 +78,8 @@ li .dropdown{
 	-moz-transition: opacity 10s;
 	-o-transition: opacity 10s;
 	transition: opacity 10s;
-
-
-
 }
+
 
 .tooltip-content::after{
 	content:"";
