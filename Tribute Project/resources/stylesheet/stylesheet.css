@@ -1,0 +1,36 @@
+html{
+	background: url(../pics/Tesla_Broadcast_Tower.jpg) no-repeat center fixed;
+	background-size: cover;
+/*	background-color: rgba(255, 255, 255, 0.5);
+	background-blend-mode: lighten;*/
+}
+
+h1{
+	font-size: 50px;
+	text-transform: capitalize;
+	display: box;
+	text-align: center;
+}
+
+h2{
+	font-size: 30px;
+	text-align: center;
+}
+
+h3{
+	text-align: center;
+}
+
+figure figcaption{
+	text-align: center;
+}
+
+ figure img{
+	display: block;
+	width: 25%;	
+	margin: auto;
+}
+
+ul{
+	list-style-type: none;
+}
