@@ -1,3 +1,10 @@
+html{
+	background: url(../pics/Chrysanthemum.jpg) no-repeat center center fixed;
+	background-size: cover;
+	background-color: rgba(255, 255, 255, 0.5);
+	background-blend-mode: lighten;
+}
+
 h1{
 	color: blue;
 }
@@ -35,8 +42,8 @@ li .dropdown{
 	position: absolute;
 	z-index: 1;
 	opacity: 0;
-	transition: opacity 3s;
-	-webkit-transition: opacity 10s;
+	transition: opacity 3s ease;
+	-webkit-transition: opacity 3s;
 
 }
 
@@ -56,6 +63,7 @@ li .dropdown{
 }
 
 /*Custom tooltip*/
+
 .custom-tooltip{
 	position: relative;
 	text-decoration: none;
@@ -74,10 +82,17 @@ li .dropdown{
 	border-radius: 10px;
 	padding: 10px;
 	opacity: 0;
+<<<<<<< HEAD
 	-webkit-transition: opacity 3s;
 	-moz-transition: opacity 10s;
 	-o-transition: opacity 10s;
 	transition: opacity 10s;
+=======
+	-webkit-transition: opacity 3s ease-in-out;
+	-moz-transition: opacity 3s ease-in-out;
+	-o-transition: opacity 3s ease-in-out;
+	transition: opacity 3s ease-in-out;
+>>>>>>> 57543f90ffd2bced3bf3d9c005269bcea9e55960
 }
 
 
@@ -101,22 +116,31 @@ li .dropdown{
 .searching-box{
 	box-sizing: border;
 	display: inline-block;
-	width: 25%;
+	width: 3%;
 	-webkit-transition: width 0.5s ease-in-out;
 	border-radius: 4px;
 	background-color: #FFF;
 	background-image: url(../pics/search.png);
 	background-repeat: no-repeat;
-/*	background-position: 10px 10px;
-	*/
 	padding: 5px 40px;
 	font-size: 16;
 }
 
-input[class="searching-box"]:hover{
-	width: 50%;
+input[class="searching-box"]:focus{
+	width: 10%;
 }
 .searching-button{
 	padding: 5px 15px;	
 	font-size: 16;	
+}
+
+/*Counter practice*/
+
+body{
+	counter-reset: section;
+}
+
+h2::before{
+counter-increment: section;
+content: "Exercise #" counter(section) ": ";
 }
