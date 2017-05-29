@@ -4,21 +4,49 @@ section{
 	margin: auto;
 }
 
+/*Navigation Menu*/
+div[class="nav-menu"]{
+	background-color: #888;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
 .nav-menu ul{
 	display: block;
 	overflow: hidden;
 	list-style-type: none;
-	width: 50%;
+	width: 60%;
 	margin: auto;
+	padding: 0px;
 }
 
 .nav-menu li{
-	float: left;
-	padding: 0px;
+	float: right;
 }
 
 .nav-menu li a{
 	display: block;
 	text-decoration: none;
 	padding: 10px;
+	color: #FFFFFF;
+	font-size: 18px;
+	font-family: tahoma;
+	height: 3em;
+	line-height: 3em;
+}
+
+.nav-menu li[class="logo"]{
+	float: left;	
+	font-size: 18px;
+	font-family: tahoma;
+	color: #FFF;
+	height: 3em;
+	line-height: 3em;
+	padding: 10px;
+
+}
+
+.nav-menu li a:hover,.nav-menu li a:active{
+	background-color: #000;
 }
