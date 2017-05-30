@@ -1,10 +1,6 @@
 body, html{
 	height: 100%;
 }
-
-body{
-	position: relative;
-}
 /*Navigation Menu*/
 
 /*Big Menu*/
@@ -15,8 +11,6 @@ div[class="big-menu"]{
 	background-color: #888;
 	padding: 0px;
 	margin: 0px;
-	position: fixed;
-	top: 0;
 }
 
 .big-menu ul{
@@ -66,7 +60,6 @@ div[class="small-menu"]{
 	height: 100%;
 	background-color: #888;
 	padding: 0px;
-	position: fixed;
 }
 
 .small-menu ul{
@@ -119,24 +112,14 @@ div[class="small-menu"]{
 	max-width: 100%;
 }
 
-/*Responsive*/
+/*Responsive menu*/
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 600px){
 	div[class="big-menu"]{
 	display: none;
 	}
 	div[class="small-menu"]{
 	display: block;
-	float: left;
 	}
-	section {
-		margin-left: 70px;
-	}
-}
-
-.about {
-	height: 75%;
-	display: block;
-	background-image: url(img/background/green_electronic_frame.jpg);
 }
 
