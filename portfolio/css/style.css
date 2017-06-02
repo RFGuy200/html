@@ -71,7 +71,8 @@ body{
 }
 
 .big-menu li a:hover{
-	border-color: #888;
+	color: #fff;
+	background-color: #888;
 }
 
 .big-menu .logo img{
@@ -93,6 +94,7 @@ body{
 
 .big-menu .social li a:hover{
 	border-color: #fff;
+	background-color: #fff;
 }
 
 /*Small Menu*/
