@@ -23,12 +23,14 @@ body{
 	position: fixed;
 	top: 0px;
 	z-index: 1000;
+	border-bottom: 1px solid black;
 }
 
 .big-menu ul{
 	list-style-type: none;
 	width: 70%;
 	margin: auto;
+	padding: 0px;
 }
 
 .big-menu li{
@@ -53,6 +55,7 @@ body{
 
 .big-menu li a{
 	display: block;
+	padding: 0px;
 	height: 3em;
 	line-height: 3em;
 	text-decoration: none;
@@ -137,6 +140,7 @@ body{
 	}
 }
 
+/*sections*/
 .home{
 	height: 95%;
 	width: 100%;
@@ -159,3 +163,10 @@ body{
 	transform: translate(-50%, -50%);
 }
 
+.fa{
+	color: grey;
+}
+
+.fa:hover{
+	color: black;
+}
