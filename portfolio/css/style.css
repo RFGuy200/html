@@ -4,13 +4,13 @@ body, html{
 	margin: 0px;
 }
 
-html{
-	background: #fff url(../img/background/designer_keyboard.jpg) no-repeat fixed center;
-	background-size: cover;
-}
-
 body{
 	position: relative;
+}
+
+section{
+	margin: 0px;
+	padding: 0px;
 }
 /*Navigation Menu*/
 
@@ -163,7 +163,6 @@ body{
 .small-menu .dropdown-menu{
 	display: none;
 	background-color: #fff;
-	transition: display 2s;
 	text-align: center;
 }
 
@@ -192,34 +191,63 @@ body{
 	z-index: 1000;
 	}
 	section{
-	padding-left: 70px;
+	padding-left: 90px;
 	}
 	html{
-		background: #fff url(../img/background/designer_keyboard_res.jpg) no-repeat fixed center;
+/*		background: #fff url(../img/background/designer_keyboard_res.jpg) no-repeat fixed center;
 		background-size: cover;
-	}
+*/	}
 }
 
 
 /*sections*/
 .home{
-	height: 95%;
+	height: 100%;
 	width: 100%;
+	padding: 0px;
+	margin: 0px;
 	box-sizing: border-box;
-	margin-top: 3em;
 	position: relative;
+	background: #fff url(../img/background/designer_keyboard_res.jpg) no-repeat fixed center;
+	background-size: cover;
+
 }
 
 .home div{
 	font-family: Lobster;
 	font-size: 60px;
 	text-shadow: 0 -1px black, -1px 0 black, 0 1px black, 0 2px 3px grey;
-	color: #C3B6DB;
+	color: #454544;
 	text-align: center;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+.about{
+	height: 50%;
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	background-image: linear-gradient(to right, #78778C, #9F9DBA);
+	color: #fff;
+	position: relative;
+/*	background: #fff url(../img/background/abstract-architectural-wallpapers-picture.jpg) no-repeat fixed center;
+	background-size: cover;
+*/}
+
+.about p{
+	position: absolute;
+	top: 50%;
+	left: 25%;
+	padding: 0px;
+	margin: 0px;
+	width: 70%;
+	margin: auto;
+	top: 50%;
+	font-size: 20px;
+
 }
 
 .contact{
