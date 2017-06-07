@@ -274,7 +274,7 @@ section{
 	margin: 0px;
 	background-image: linear-gradient(to right, #362440, #B57BD6);
 	color: #fff;
-	font-family: monospace;
+	/*font-family: monospace;*/
 	text-align: center;
 	padding: 3em 0px;
 }
@@ -282,11 +282,15 @@ section{
 .projects iframe{
 		padding: 10px;
 		display: block;
-		margin: auto;
+		margin: 10px auto;
 }
 
 .projects h1{
 	padding: 1em 0px;
+}
+
+.projects .fa{
+	color: #fff;
 }
 
 .contact{
