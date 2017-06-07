@@ -4,6 +4,11 @@ body, html{
 	margin: 0px;
 }
 
+h1, h2, h3, h4, h5, h6{
+	margin: 0px;
+	padding: 0px;
+}
+
 body{
 	position: relative;
 }
@@ -217,7 +222,7 @@ section{
 	font-family: Lobster;
 	font-size: 60px;
 	text-shadow: 0 -1px black, -1px 0 black, 0 1px black, 0 2px 3px grey;
-	color: #454544;
+	color: #B57BD6;
 	text-align: center;
 	position: absolute;
 	top: 50%;
@@ -226,7 +231,8 @@ section{
 }
 
 .about{
-	height: 50%;
+	height: 80%;
+	width: 100;
 	padding: 0px;
 	margin: 0px;
 	box-sizing: border-box;
@@ -236,27 +242,51 @@ section{
 }
 
 .about p{
-	width: 60%;
-	height: 80%;
+	width: 30%;
 	position: absolute;
 	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -47%);
+	left: 15%;
+	transform: translate(0px, -50%);
 	padding: 0px;
 	margin: 0px;
 	font-size: 30px;
 	text-overflow: ellipsis;
+	text-align: justify;
 }
 
 /*<img class="icon icons8-Cat-Footprint" width="26" height="26" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAB7UlEQVRIS72WjTEEQRCF30WACBABIkAEiICLgIsAESACLgJEwEWACJCBDKhva/uqr69nd1YpXXV1Vbs9/frn9Zsd6Z9sVIGzIemjw29b0m77firpK/PtAlqV9CSJQBzel/QagpxIunXPeL8zFOjZZcpZqtp0Qaj0PQk6lnQXn5cqooqXJAhVkQB2Iek88aF9VLpgJaAzSVdJkImk6/b5g6SDxGcmaa8WqJTtkSQAsD8BOpR0/8vW3UiiI1WtwwmmrQR/yGBUr5nj/HgXveOcst5D5y2XTDof3nsgAjNcSrc5MPhTSZ+SaGfcI6qChVQOCD62sBaPDowNyAJacpctfZMxVT1ij46d5wQgqIgCeCOrtaqQy04ZkWYAxWrsqF/OIZi0aj0caICi1HQBITu2pI+J2Ebts1hTgEqLR+u8EtNidguxNfpHoS12B6Asi0hT2MUcDcQypU2otSWUATWxjHVxH/x8CI5KRxADg2EoNhaJxVo014wBEQR9YwYctD3yd1IXIfzVAOvYIZInZlNtlzKQCTMBvMYIzrKn1nUfZTPpA2RmdISFX7ASULYLfSD+PSvDnOdWAvoeErWmWyWg7IoYgr2k4iUgmEOv/X301qoIbKK1kAWi8M/PfFEM2Lag9H3fdXb3cyj9Xqst8wcX3Wzr0PH3zAAAAABJRU5ErkJggg==">
 */
 
 .about img{
-	max-width: 30%;
+	max-width: 20%;
 	height: auto;
-	float: right;
-	margin: 10px;
+	position: absolute;
+	top: 50%;
+	right: 25%;
+	transform: translate(0px, -50%);
+	margin: 0px;
+	padding: 0px;
 	border-radius: 50%;
+}
+
+.projects{
+	padding: 0px;
+	margin: 0px;
+	background-image: linear-gradient(to right, #362440, #B57BD6);
+	color: #fff;
+	font-family: monospace;
+	text-align: center;
+	padding: 3em 0px;
+}
+
+.projects iframe{
+		padding: 10px;
+		display: block;
+		margin: auto;
+}
+
+.projects h1{
+	padding: 1em 0px;
 }
 
 .contact{
