@@ -292,18 +292,64 @@ section{
 }
 
 .contact{
-	height: 25%;
-	background-color: transparent;
-	/*position: relative;*/
+	/*height: 80%;*/
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	background-image: linear-gradient(to right, #78778C, #9F9DBA);
+	position: relative;
 }
 
-.contact div{
-/*	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate( -50%, -50%);*/
-	width: 70%;
-	text-align: center;
+.contact form{
+	display: inline-block;
+	width: 30%;
+	/*position: absolute;*/
+	/*top: 50%;*/
+	/*left: 15%;*/
+	/*transform: translate(0px, -50%);*/
+	padding: 10%;
+	margin: 0px;
+	float: left;
+}
+
+.contact input[type="text"], textarea{
+	padding: 0.5em;
+	font-size: 30px;
+	color: #fff;
+	background-color: transparent;
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+	outline: none;
+	border-color: #fff;
+}
+
+.contact input::placeholder, textarea::placeholder{
+	color: #fff;
+}
+
+.contact input[type="submit"]{
+	font-size: 25px;
+}
+
+.contact p{
+	width: 30%;
+	display: inline-block;
+	float: left;
+	/*position: absolute;*/
+	/*top: 50%;*/
+	/*right: 20%;*/
+	/*transform: translate(0px, -100%);*/
+	padding: 10%;
+	margin: 0px;
+	font-size: 30px;
+	color: #fff;
+}
+
+.contact:after{
+	clear: both;
+	content: "";
+	display: table;
 }
 
 footer{
