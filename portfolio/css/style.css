@@ -60,7 +60,7 @@ section{
 	color: #000;
 	word-spacing: -10px;
 	background-color: #FFF;
-	letter-spacing: -2spx;
+	letter-spacing: -2px;
 	font-size: 32px;
 }
 
@@ -150,7 +150,7 @@ section{
 
 .small-menu li[class="logo"]{
 	display: block;
-	height: 3em
+	height: 3em;
 	line-height: 3em;
 	margin: 0px;
 	padding: 0px;
@@ -233,7 +233,7 @@ section{
 
 .about{
 	height: 80%;
-	width: 100;
+	width: 100%;
 	padding: 0px;
 	margin: 0px;
 	box-sizing: border-box;

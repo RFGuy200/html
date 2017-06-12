@@ -35,7 +35,7 @@ div[class="big-menu"]{
 	color: #000;
 	word-spacing: -10px;
 	background-color: #888;
-	letter-spacing: -2spx;
+	letter-spacing: -2px;
 	font-size: 32px;
 }
 
@@ -94,7 +94,7 @@ div[class="small-menu"]{
 
 .small-menu li[class="logo"]{
 	display: block;
-	height: 3em
+	height: 3em;
 	line-height: 3em;
 	float: none;
 	margin: 0px;
